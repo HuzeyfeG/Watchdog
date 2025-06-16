@@ -35,7 +35,7 @@ class Watchdog:
 
 	def scan_network(self):
 		network_scanner = NetworkScanner()
-		# network_scanner.network_range = input("\nPlease enter the network range (ex: 192.168.1.0/24) --> ")
+		# network_scanner.network_range = input("\nPlease enter the network range (ex: 192.168.1.0/24) -> ")
 		network_scanner.network_range = "192.168.1.0/24"
 		network_scanner.scan_network()
 		self.device_list = network_scanner.device_list
